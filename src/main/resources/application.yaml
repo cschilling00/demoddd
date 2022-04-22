@@ -1,0 +1,17 @@
+
+spring:
+  datasource:
+    url: jdbc:h2:file:./data/demoDdd;
+    driverClassName: org.h2.Driver
+    username: sa
+    password: password
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+    hibernate:
+      ddl-auto: create
+  jackson:
+    mapper:
+      default-view-inclusion: true
+  sql:
+    init:
+      mode: always
